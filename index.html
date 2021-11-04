@@ -1,79 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam dolor, quasi ullam quaerat facere eveniet officiis fugiat architecto mollitia aspernatur, laboriosam voluptatum sed numquam ad quam ab repudiandae. Dolorem!</h1>
-    
-    <h1>, aut voluptatum possimus temporibus earum maiores debitis odio inventore cum ipsa molestias corporis commodi accusantium.</h1>
+  </head>
+  <body>
+    <!-- <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam dolor,
+      quasi ullam quaerat facere eveniet officiis fugiat architecto mollitia
+      aspernatur, laboriosam voluptatum sed numquam ad quam ab repudiandae.
+      Dolorem!
+    </h1>
 
-<script>
-    // const array = [1, 2, 3, 4,];
-    //  array. length > 0 ? alert("more then 0") : alert('less then 0');  
-    // //  
+    <h1>
+      , aut voluptatum possimus temporibus earum maiores debitis odio inventore
+      cum ipsa molestias corporis commodi accusantium.
+    </h1> -->
 
+    <script>
+      // const array = [1, 2, 3, 4,];
+      //  array. length > 0 ? alert("more then 0") : alert('less then 0');
+      // //
 
+      // function getNamber ( First = 1, Second = 2)  {
+      //     const hiNamber = (First + Second);
 
+      //     return hiNamber
+      // }
+      //  const hiName = getNamber();
 
-    // function getNamber ( First = 1, Second = 2)  {    
-    //     const hiNamber = (First + Second);
-    
-    //     return hiNamber
-    // }
-    //  const hiName = getNamber();
+      // alert(getNamber());
 
-    // alert(getNamber());
+      // function getArgumentsLength(a,b,c) {
+      //     alert(arguments.length);
 
-// function getArgumentsLength(a,b,c) {
-//     alert(arguments.length);
+      //     for (let i = 0; i < arguments.length; i++) {
+      //         alert(arguments[i]);
+      //     }
 
-//     for (let i = 0; i < arguments.length; i++) {
-//         alert(arguments[i]);
-//     }
+      // }
 
-// }
+      // getArgumentsLength("a", "b", "c", "d");
 
-// getArgumentsLength("a", "b", "c", "d");
+      // само вызываемаея функция
 
+      // (function (){
+      //     consle.log('Привет мир');
+      // })();
 
-// само вызываемаея функция
+      // function fact2 (n) {
+      //     if (n<=1)
+      //     return 1;
+      //     return n * fact2 ( n - 1 );
+      // }
+      // console.log( fact2(5) );
 
-// (function (){
-//     consle.log('Привет мир');
-// })();
+      // let fact2 = (n) => {
+      //     if (n <= 1)
+      //     return 1;
+      //     return n * fact2(n - 1);
+      // };
+      // console.log( fact2( 5 ) );
 
-// function fact2 (n) {
-//     if (n<=1) 
-//     return 1;
-//     return n * fact2 ( n - 1 );
-// }
-// console.log( fact2(5) );
+      // array = (1, 2, 3, 4);
+      // array.forEach((item, index, array) => alert (item));
 
-// let fact2 = (n) => {
-//     if (n <= 1)
-//     return 1;
-//     return n * fact2(n - 1);
-// };
-// console.log( fact2( 5 ) );
+      // array.forEach(item, index, array  => {
+      //     alert (item);
+      // });
 
+      //   console.log("привет");
 
-array = (1, 2, 3, 4);
-array.forEach((item, index, array) => alert (item));
+      //   function ask(question, yes, no) {
+      //     if (conform(question)) {
+      //       yes();
+      //     } else no();
+      //   }
 
+      //   function showOK() {
+      //     alert(" вы согласныю");
+      //   }
 
-array.forEach(item, index, array  => {
-    alert (item);
-});
+      //   function showConsole() {
+      //     alert("вы  отменили выполнение");
+      //   }
 
-</script>
+      //   ask("вы согласны", showOK, showConsole);
 
+      // function ask(question, yes, no) {
+      //     if (confirm(question)) {
+      //         yes();
+      //     }
+      //        else no();
+      // }
+      // function myName (){
+      //     // return "yes";
+      //     alert('gerait!!!!!!');
+      // }
 
+      // function notMyName (){
+      //     // return "no";
+      //    alert("How is your name?");
+      // }
+      // ask("is your name? Aleks?", myName, notMyName);
 
+      //   function ask(ques, yes, no) {
+      //     if (confirm(ques)) {
+      //       yes();
+      //     } else no();
+      //   }
+      //   function kakTebyaZovut() {
+      //      confirm("Foma");
+      //    }
 
-</body>
+      //   function paozdravlenie() {
+      //     alert("ну поздравляю!");
+      //   }
 
+      //   ask("tebya zovyt Foma?  если да нажми ок!", paozdravlenie, kakTebyaZovut);
+
+      let array = [10, "10", "Miha", null, undefined];
+
+      alert(array.filter((element) => typeof element === "string"));
+
+    </script>
+  </body>
 </html>
