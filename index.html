@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -121,9 +121,120 @@
 
       //   ask("tebya zovyt Foma?  если да нажми ок!", paozdravlenie, kakTebyaZovut);
 
-      let array = [10, "10", "Miha", null, undefined];
+      // let array = [10, "10", "Miha", null, undefined];
 
-      alert(array.filter((element) => typeof element === "string"));
+      // alert(array.filter((element) => typeof element === "string"));
+
+      // function sum(x) {
+      //   return function (y) {
+      //     return function (z) {};
+      //   };
+
+      // }
+
+      // sum = 1 + 2 + 3;
+      // console.log(sum);
+
+      //       let arr = [1, 2, 3, 4, 5, 6, 7];
+      // function inBetween(){
+      //   arr.filter(inBetween(3,6),{
+
+      //   })
+      //   console.log(inBetween)
+      // }
+
+      // const arr = [1, 2, 3, 4, 5, 6, 7];
+
+      // function inArray(arr) {
+      //   return function (item) {
+      //     for (let i = 0; i < arr.length; i++) {
+      //       if (arr[i] === item) {
+      //       }
+      //     }
+      //   };
+      // }
+
+      // arr.filter(inArray([1, 2, 10]));
+      // const newArray = arr.filter(inArray(arr));
+      // console.log(newArray);
+
+      let object = {
+        // ключ и значение
+        name: "ivan",
+        age: 27,
+      };
+
+      console.log(object.age);
+
+
+
+      let array = [
+        { name: "boba", age: 19 },
+        { name: "bobi", age: 18 },
+        { name: "boby", age: 17 },
+        { name: "bobo", age: 16 },
+      ];
+
+      function increment(arr) {
+        for (let i = 0; i < arr.length; i++) {
+          arr[i].age++;
+        }
+
+        return arr;
+      }
+
+      console.log(increment(array));
+
+
+
+//-----------------------------------------------
+
+
+let obj = {
+  name: "boba",
+  city: 'Minsk'
+};
+
+obj.name;
+
+
+for (let key in obj) {
+  console.log(key, obj[key]);
+}
+
+//___________________________________________
+
+function isEmpty(obj) {
+
+  isEmpty({}); 
+  isEmpty({name: "boba"});
+
+  let object = {
+    name: "iva",
+   citys: "Talin"
+  };
+ 
+  array.forEach(object=> {
+    
+  });
+  for (let key in obj) {
+  key;
+   obj[key];
+ }
+
+ console.log(key, obj[key]);
+}
+
+//------------------------------------------------------
+
+
+ДЗ
+
+let  arrey = [
+  {name "Ivanov", salary: 1000},
+  {name: "Petrow", selary: 2000},
+]
+
 
     </script>
   </body>
