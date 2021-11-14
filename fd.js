@@ -112,15 +112,30 @@
 
 //_____________________________________________
 
-let firstPart = 'likses';
-let userInfo = { 
-    name: 'Вася',
-    age: 30,
-    [firstPart]: true,
-};
-console.log(userInfo[firstPart]);
-console.log(userInfo['name']);
+// let firstPart = 'likses';
+// let userInfo = { 
+//     name: 'Вася',
+//     age: 30,
+//     [firstPart]: true,
+// };
+// console.log(userInfo[firstPart]);
+// console.log(userInfo['name']);
 
 // приемущуество квадратных скобок
 //let key = "name";
 //console.log(userInafo[key]);
+//_________________________________________
+//вложенность
+
+let userInfo = {
+    name: "Вася",
+    age: 30,
+    adrees: {
+        sity: 'Minsk',
+        sreet: "freedom",
+    }
+};
+console.log(userInfo);
+console.log(userInfo.name);
+console.log(userInfo.adrees);
+console.log(userInfo.adrees.sreet)
