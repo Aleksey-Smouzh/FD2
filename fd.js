@@ -139,3 +139,35 @@ console.log(userInfo);
 console.log(userInfo.name);
 console.log(userInfo.adrees);
 console.log(userInfo.adrees.sreet)
+
+//_______________________________________
+//свойство из переменной
+
+function makeUserInfo() {
+    let a = 5;
+    let b = 5;
+    let z = b + a;
+    return {
+        a,
+        b,
+        z,
+    };
+    
+}
+let user = makeUserInfo();
+console.log(user);
+
+
+function grizli(){
+let a = 1;
+let t = 2; 
+let c = a + t;
+let v = (a + c) * t;
+return{
+   
+    v,
+};
+
+}
+let pizli = grizli();
+console.log(pizli);
