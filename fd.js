@@ -104,7 +104,7 @@
 //     name: "Вася",
 //     age: 30,
 //     "liks Javascript": true
-// }; 
+// };
 // console.log(userInfo);
 // console.log(userInfo.age);
 // console.log(userInfo['name']);
@@ -113,7 +113,7 @@
 //_____________________________________________
 
 // let firstPart = 'likses';
-// let userInfo = { 
+// let userInfo = {
 //     name: 'Вася',
 //     age: 30,
 //     [firstPart]: true,
@@ -127,47 +127,105 @@
 //_________________________________________
 //вложенность
 
-let userInfo = {
-    name: "Вася",
-    age: 30,
-    adrees: {
-        sity: 'Minsk',
-        sreet: "freedom",
-    }
-};
-console.log(userInfo);
-console.log(userInfo.name);
-console.log(userInfo.adrees);
-console.log(userInfo.adrees.sreet)
+// let userInfo = {
+//     name: "Вася",
+//     age: 30,
+//     adrees: {
+//         sity: 'Minsk',
+//         sreet: "freedom",
+//     }
+// };
+// console.log(userInfo);
+// console.log(userInfo.name);
+// console.log(userInfo.adrees);
+// console.log(userInfo.adrees.sreet)
 
 //_______________________________________
 //свойство из переменной
 
-function makeUserInfo() {
-    let a = 5;
-    let b = 5;
-    let z = b + a;
-    return {
-        a,
-        b,
-        z,
-    };
-    
-}
-let user = makeUserInfo();
-console.log(user);
+// function makeUserInfo() {
+//     let a = 5;
+//     let b = 5;
+//     let z = b + a;
+//     return {
+//         a,
+//         b,
+//         z,
+//     };
 
+// }
+// let user = makeUserInfo();
+// console.log(user);
 
-function grizli(){
-let a = 1;
-let t = 2; 
-let c = a + t;
-let v = (a + c) * t;
-return{
-   
-    v,
+// function grizli(){
+// let a = 1;
+// let t = 2;
+// let c = a + t;
+// let v = (a + c) * t;
+// return{
+
+//     v,
+// };
+
+// }
+// let pizli = grizli();
+// console.log(pizli);
+//___________________________________________
+
+//____________________________________
+
+// Изменения  обекта бб
+// добавление свойства
+// удаление свойства
+let userInfo = {
+  name: "Вася",
 };
 
-}
-let pizli = grizli();
-console.log(pizli);
+console.log(userInfo);
+
+userInfo.age = 30;
+
+console.log(userInfo);
+
+userInfo["liks javacsript"] = true;
+
+console.log(userInfo);
+
+userInfo.address = {
+  sity: "Minsk",
+  strit: "Fridom",
+};
+
+console.log(userInfo.address);
+
+let infoUser = {
+  live: "Minsk",
+  ["was born"]: "Chirchiq",
+};
+console.log(infoUser);
+delete infoUser.live;
+
+console.log(infoUser);
+
+delete infoUser["was born"];
+
+console.log(infoUser)
+
+infoUser.name = "Bobi";
+console.log(infoUser);
+
+infoUser.car = "bugati verona";
+infoUser.cat = "mi mi";
+infoUser.name = "Vasya";
+console.log(infoUser);
+
+delete infoUser.cat;
+
+console.log(infoUser);
+infoUser.cat = "mima";
+
+console.log(infoUser);
+
+infoUser.cat = "pima";
+
+console.log(infoUser);
