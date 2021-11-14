@@ -177,55 +177,90 @@
 // Изменения  обекта бб
 // добавление свойства
 // удаление свойства
+// let userInfo = {
+//   name: "Вася",
+// };
+
+// console.log(userInfo);
+
+// userInfo.age = 30;
+
+// console.log(userInfo);
+
+// userInfo["liks javacsript"] = true;
+
+// console.log(userInfo);
+
+// userInfo.address = {
+//   sity: "Minsk",
+//   strit: "Fridom",
+// };
+
+// console.log(userInfo.address);
+
+// let infoUser = {
+//   live: "Minsk",
+//   ["was born"]: "Chirchiq",
+// };
+// console.log(infoUser);
+// delete infoUser.live;
+
+// console.log(infoUser);
+
+// delete infoUser["was born"];
+
+// console.log(infoUser);
+
+// infoUser.name = "Bobi";
+// console.log(infoUser);
+
+// infoUser.car = "bugati verona";
+// infoUser.cat = "mi mi";
+// infoUser.name = "Vasya";
+// console.log(infoUser);
+
+// delete infoUser.cat;
+
+// console.log(infoUser);
+// infoUser.cat = "mima";
+
+// console.log(infoUser);
+
+// infoUser.cat = "pima";
+
+// console.log(infoUser);
+
+//__________________________________________
+
+//Изменение свойсв объекта даже в констаньтею
+
+// const userInfo = {
+//     name: 'Vasia',
+//     age: 30,
+
+// }
+// console.log(userInfo);
+
+// userInfo.age = 18;
+// userInfo.name = "vita"
+// userInfo.sity = "grodno"
+
+// delete userInfo.name
+
+// userInfo.name = "Vova"
+// console.log(userInfo)
+
+//____________________
+//Копироване обекта (сам объект не ндублируеться)
+
 let userInfo = {
-  name: "Вася",
+  name: "Vova",
+  age: 29,
 };
 
 console.log(userInfo);
-
-userInfo.age = 30;
-
-console.log(userInfo);
-
-userInfo["liks javacsript"] = true;
+let user = userInfo;
+console.log(user);
+userInfo.name = "dima";
 
 console.log(userInfo);
-
-userInfo.address = {
-  sity: "Minsk",
-  strit: "Fridom",
-};
-
-console.log(userInfo.address);
-
-let infoUser = {
-  live: "Minsk",
-  ["was born"]: "Chirchiq",
-};
-console.log(infoUser);
-delete infoUser.live;
-
-console.log(infoUser);
-
-delete infoUser["was born"];
-
-console.log(infoUser)
-
-infoUser.name = "Bobi";
-console.log(infoUser);
-
-infoUser.car = "bugati verona";
-infoUser.cat = "mi mi";
-infoUser.name = "Vasya";
-console.log(infoUser);
-
-delete infoUser.cat;
-
-console.log(infoUser);
-infoUser.cat = "mima";
-
-console.log(infoUser);
-
-infoUser.cat = "pima";
-
-console.log(infoUser);
