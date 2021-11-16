@@ -253,14 +253,65 @@
 //____________________
 //Копироване обекта (сам объект не ндублируеться)
 
-let userInfo = {
-  name: "Vova",
-  age: 29,
+// let userInfo = {
+//   name: "Vova",
+//   age: 29,
+// };
+
+// console.log(userInfo);
+// let user = userInfo;
+// console.log(user);
+// userInfo.name = "dima";
+
+// console.log(userInfo);
+
+// function name() {
+//   console.log(this);
+// }
+
+// --------------------------------
+//_________16.11.21
+//__________калюкулятор
+
+let calculator = {
+  sum: function () {
+    return this.a + this.b;
+  },
+  mul: function () {
+    return this.a * this.b;
+  },
+  readValues: function () {
+    this.a = +prompt("первое число a?", 0);
+    this.b = +prompt(" второе число b?", 0);
+  },
 };
 
-console.log(userInfo);
-let user = userInfo;
-console.log(user);
-userInfo.name = "dima";
+//calculator.readValues();
+//alert (calculator.sum());
+//alert (calculator.mul());
 
-console.log(userInfo);
+//_____________________________________________________//////
+
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this
+  },
+  down() {
+    this.step--;
+    return this
+  },
+  showStep: function () {
+    // показывает текущую ступеньку
+    alert(this.step);
+    return this
+  },
+};
+
+ladder.up();
+ladder.up();
+ladder.down();
+ladder.showStep(); // 1
+
+ladder.up().up().down().showStep(); // 1
