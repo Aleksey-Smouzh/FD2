@@ -292,26 +292,83 @@ let calculator = {
 
 //_____________________________________________________//////
 
-let ladder = {
-  step: 0,
-  up() {
-    this.step++;
-    return this
-  },
-  down() {
-    this.step--;
-    return this
-  },
-  showStep: function () {
-    // показывает текущую ступеньку
-    alert(this.step);
-    return this
-  },
-};
+// let ladder = {
+//   step: 0,
+//   up() {
+//     this.step++;
+//     return this
+//   },
+//   down() {
+//     this.step--;
+//     return this
+//   },
+//   showStep: function () {
+//     // показывает текущую ступеньку
+//     alert(this.step);
+//     return this
+//   },
+// };
 
-ladder.up();
-ladder.up();
-ladder.down();
-ladder.showStep(); // 1
+// ladder.up();
+// ladder.up();
+// ladder.down();
+// ladder.showStep(); // 1
 
-ladder.up().up().down().showStep(); // 1
+// ladder.up().up().down().showStep(); // 1
+
+
+// function User (name, admin, ){
+//     this.name = name;
+//     this.admin = admin;
+//     // alert (this.name + " / " + this.admin);{
+
+//     // }
+//     this.show = function (){
+//         return this.admin
+//         alert (this.name + " / " + this.admin);{
+
+//              }
+//     }
+   
+// }
+// let user1 = new User ('Mark', true,);
+// let user2 = new User ('Miki', 'false');
+
+
+// console.log(this.admin)
+
+
+// user1.show();
+// user2.show();
+
+// function People (_nameSity, count) {
+//     this._nameSity = nameSity;
+//     this.count = count;
+//     this.show = function () {
+//         alert (this._nameSity + " / " + this.count);
+//         return this.count
+        
+//     }
+// }
+// let sity1 = new People ("polack" , 100500)
+// let sity1 = new People ("nowpolack" , 100501)
+
+// sity1.getCount();
+
+
+const animals = [{name: "", color: "", age: "", voice: '' }, { name "", color}]
+
+class animals {
+    constructor(name. color, age, voise ) {}
+
+
+    say() {
+
+    }
+ function animalFarm(animals) {
+     
+    const newAnimals = animals.map ((animal) => )
+ return objecetAnimals
+}
+
+}
