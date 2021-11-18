@@ -355,20 +355,97 @@ let calculator = {
 
 // sity1.getCount();
 
+//______________________шаблон для дз 5
+// const animals = [{name: "", color: "", age: "", voice: '' }, { name "", color}]
 
-const animals = [{name: "", color: "", age: "", voice: '' }, { name "", color}]
-
-class animals {
-    constructor(name. color, age, voise ) {}
+// class animals {
+//     constructor(name. color, age, voise ) {}
 
 
-    say() {
+//     say() {
 
-    }
- function animalFarm(animals) {
+//     }
+//  function animalFarm(animals) {
      
-    const newAnimals = animals.map ((animal) => )
- return objecetAnimals
-}
+//     const newAnimals = animals.map ((animal) => )
+//  return objecetAnimals
+// }
 
-}
+// }
+//__________________________
+// const vawels = ['a', 'e', 'и']
+// const getCount = (string) => {
+//     return (vowels) => {
+//       const array = string.split('');
+//       const count = array.reduce ((sum, item) => sum + vawels.includes(item), 0);
+//       return count;
+//     };
+// }; 
+
+// console.log(getCount('Привет') ());
+
+//____________________________________________________
+
+// let animal = {
+//     eats: true,
+// };
+// let rebbit = {
+//     jamps: true
+// };
+
+// rebbit. __proto__ = animal;
+// alert (rebbit.eats);
+// alert (rebbit.jamps);
+
+//_______________________________
+
+// let pet = {
+//     eats: true,
+// };
+// let dog = {
+//     jamps: true
+// };
+
+// dog. __proto__ = pet;
+// alert (dog.eats);
+// alert (dog.jamps);
+
+//_____________________________________
+
+// let animal = {
+//     eats: true,
+//     walk() {
+//         alert('Animal walk');
+//     }
+// };
+//  let rabbit = {
+//  jumps : true,
+ 
+//  __proto__: animal,
+//  };
+
+//  let longEre = {
+//      earloength: 10,
+//      __proto__: rabbit
+//  };
+
+//  rabbit.walk();
+ //_______________________________________________
+
+
+ let animal = {
+     eats: true,
+     };
+     let rabbit = {
+         jamps: true
+     };
+
+     for(let prop in rabbit) {
+         let isOwn = rabbit.hasOwnProperty(prop);
+
+         if (isOwn) {
+             console.log(`Our; ${prop}`);
+         } else {
+             console.log(`inherited; ${prop}`);
+         }
+     }
