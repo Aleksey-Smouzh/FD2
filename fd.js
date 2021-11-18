@@ -316,7 +316,6 @@ let calculator = {
 
 // ladder.up().up().down().showStep(); // 1
 
-
 // function User (name, admin, ){
 //     this.name = name;
 //     this.admin = admin;
@@ -329,14 +328,12 @@ let calculator = {
 
 //              }
 //     }
-   
+
 // }
 // let user1 = new User ('Mark', true,);
 // let user2 = new User ('Miki', 'false');
 
-
 // console.log(this.admin)
-
 
 // user1.show();
 // user2.show();
@@ -347,7 +344,7 @@ let calculator = {
 //     this.show = function () {
 //         alert (this._nameSity + " / " + this.count);
 //         return this.count
-        
+
 //     }
 // }
 // let sity1 = new People ("polack" , 100500)
@@ -361,12 +358,11 @@ let calculator = {
 // class animals {
 //     constructor(name. color, age, voise ) {}
 
-
 //     say() {
 
 //     }
 //  function animalFarm(animals) {
-     
+
 //     const newAnimals = animals.map ((animal) => )
 //  return objecetAnimals
 // }
@@ -380,7 +376,7 @@ let calculator = {
 //       const count = array.reduce ((sum, item) => sum + vawels.includes(item), 0);
 //       return count;
 //     };
-// }; 
+// };
 
 // console.log(getCount('Привет') ());
 
@@ -420,7 +416,7 @@ let calculator = {
 // };
 //  let rabbit = {
 //  jumps : true,
- 
+
 //  __proto__: animal,
 //  };
 
@@ -430,22 +426,56 @@ let calculator = {
 //  };
 
 //  rabbit.walk();
- //_______________________________________________
+//_______________________________________________
+
+//  let animal = {
+//      eats: true,
+//      };
+//      let rabbit = {
+//          jamps: true
+//      };
+
+//      for(let prop in rabbit) {
+//          let isOwn = rabbit.hasOwnProperty(prop);
+
+//          if (isOwn) {
+//              console.log(`Our; ${prop}`);
+//          } else {
+//              console.log(`inherited; ${prop}`);
+//          }
+//      }
+
+//_________________________________
+
+// let animal = {
+//   eats: true,
+// };
+
+// function Rabbit(name) {
+//   this.name = name;
+// }
+
+// Rabbit.prototype = animal;
+// let rabbit = new Rabbit("white Rabbit");
+// let rabbit1 = new Rabbit("Blek Rabbit");
+
+// alert(rabbit1.eats);
 
 
- let animal = {
-     eats: true,
-     };
-     let rabbit = {
-         jamps: true
-     };
 
-     for(let prop in rabbit) {
-         let isOwn = rabbit.hasOwnProperty(prop);
-
-         if (isOwn) {
-             console.log(`Our; ${prop}`);
-         } else {
-             console.log(`inherited; ${prop}`);
-         }
-     }
+let people = {
+    eats: true,
+    flye: false
+  };
+  
+  function man (flye) {
+    this.name = name;
+    this.flye = flye;
+  }
+  
+  man.prototype = people;
+  let superman = new man("white Rabbit");
+  let superman1 = new man ("неа не уммет");
+  
+  alert(superman1.flye);
+  
