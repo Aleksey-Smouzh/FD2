@@ -273,18 +273,18 @@
 //_________16.11.21
 //__________калюкулятор
 
-let calculator = {
-  sum: function () {
-    return this.a + this.b;
-  },
-  mul: function () {
-    return this.a * this.b;
-  },
-  readValues: function () {
-    this.a = +prompt("первое число a?", 0);
-    this.b = +prompt(" второе число b?", 0);
-  },
-};
+// let calculator = {
+//   sum: function () {
+//     return this.a + this.b;
+//   },
+//   mul: function () {
+//     return this.a * this.b;
+//   },
+//   readValues: function () {
+//     this.a = +prompt("первое число a?", 0);
+//     this.b = +prompt(" второе число b?", 0);
+//   },
+// };
 
 //calculator.readValues();
 //alert (calculator.sum());
@@ -461,21 +461,88 @@ let calculator = {
 
 // alert(rabbit1.eats);
 
+//_______________________________________________
+
+// let people = {
+//   eats: true,
+//   flye: false,
+// };
+
+// function man(flye) {
+//   this.name = name;
+//   this.flye = flye;
+// }
+
+// man.prototype = people;
+// let superman = new man("white Rabbit");
+// let superman1 = new man("неа не уммет");
+
+// alert(superman1.flye);
+
+//_______________________________________________
+
+//let getSomeAge = () => {
+ //   return 100;
+//};
+
+// function superMan (getSomeAge) {
+//     this.getSomeAge = getSomeAge;
+// }
+// superMan.prototype = getSomeAge;
+// let superMario = new superMan('bingo')
+
+// alert(superMan(getSomeAge));
+
+//function User () {
+    
+//}
+//User.prototype.getSomeAge = getSomeAge;
+//const.user = getSomeUser
+
+//"Приет".getVowels()
+
+//_________________MAP & FILTER_______________________
 
 
-let people = {
-    eats: true,
-    flye: false
-  };
-  
-  function man (flye) {
-    this.name = name;
-    this.flye = flye;
-  }
-  
-  man.prototype = people;
-  let superman = new man("white Rabbit");
-  let superman1 = new man ("неа не уммет");
-  
-  alert(superman1.flye);
-  
+let a = [4, 5, 12, 200, 1, 0, -2, ];
+
+let b = a.map(function(item, index,) {
+    console.log(item);
+    return item * 5;
+}) //новый масив куда будет складываться результат операции
+// function () ананимная функция которая будет применяться
+// к каждому элементу данного масива и результат выполнения 
+// будет записываться в переменную "b".
+// return item перебрал масив "а" и по очериде вернули в масив "b",
+console.log(b)
+/* есть функция котороая написана внутри "map" эта функция
+применяеться по очереди к каждому элементу "а"  то что возвратит 
+return item то попадет в масив "b" если ничего не вернет то будет 
+undefined */
+/* Если в масиве А лежит 5 элементов то и в масиве Б будет 5 
+элементов вункция будет запускаться столько раз сколько элементов в масиве */
+//________________________________________________________
+
+
+
+//______________пределка в стрелочную функцию ________________
+
+let z = [4, 5, 12, 200, 1, 0, -2, ];
+
+let y = a.map((item, index,) => {
+    //console.log(item);
+    return item * 5;
+}) //новый масив куда будет складываться результат операции
+// function () ананимная функция которая будет применяться
+// к каждому элементу данного масива и результат выполнения 
+// будет записываться в переменную "b".
+// return item перебрал масив "а" и по очериде вернули в масив "b",
+console.log(b)
+/* есть функция котороая написана внутри "map" эта функция
+применяеться по очереди к каждому элементу "а"  то что возвратит 
+return item то попадет в масив "b" если ничего не вернет то будет 
+undefined */
+/* Если в масиве А лежит 5 элементов то и в масиве Б будет 5 
+элементов вункция будет запускаться столько раз сколько элементов в масиве */
+
+//_______________________________________________
