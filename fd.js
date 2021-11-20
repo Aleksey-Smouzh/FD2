@@ -663,3 +663,27 @@ if (isNaN(year)) return;
 if (year <=0 || year > 140) return;
 document.querySelector('.out-4').innerHTML = 2021 - year;
 });
+//______________________________________________________
+//_____пример :5 сумма___________________________________
+
+
+console.group('example 5')
+const arr5 = [[3,4,5], [6,7,8]];
+function t5(){
+    let n = 0;
+    for (let i = 0; i < arr5.length; i++){
+       n += sum(arr5[i]);
+    
+    }
+    console.log(n);
+}
+function sum(arr){
+    let sum = 0;
+    for (let i =0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum;
+}
+
+t5();
+console.groupEnd();
