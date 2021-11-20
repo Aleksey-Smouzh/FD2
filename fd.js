@@ -635,55 +635,92 @@ function clearText(data) {
 //__________________-прирывание функции____________________________________
 
 function t7() {
-    console.log(1);
-    return;
-    console.log(2);
-    console.log(3);
+  console.log(1);
+  return;
+  console.log(2);
+  console.log(3);
 }
 t7();
 
 //______________________эмулируем indexOf_________________________________
-function indexOfEmul(arr, num){
-for (let i = 0; i < arr.length; i++){
-if (arr[i] === num) return i
-}
-    return -1;
+function indexOfEmul(arr, num) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === num) return i;
+  }
+  return -1;
 }
 let result = indexOfEmul([22, 33, 44, 55], 33);
 console.log(result);
 
 //___________________________________________________________________
-// пользователь ввооодит количество лет 
+// пользователь ввооодит количество лет
 
-
-document.querySelector('.b-4').addEventListener('click', 
-function(){
-let year = +document.querySelector('.i-4').value;
-if (isNaN(year)) return;
-if (year <=0 || year > 140) return;
-document.querySelector('.out-4').innerHTML = 2021 - year;
+document.querySelector(".b-4").addEventListener("click", function () {
+  let year = +document.querySelector(".i-4").value;
+  if (isNaN(year)) return;
+  if (year <= 0 || year > 140) return;
+  document.querySelector(".out-4").innerHTML = 2021 - year;
 });
 //______________________________________________________
 //_____пример :5 сумма___________________________________
 
-
-console.group('example 5')
-const arr5 = [[3,4,5], [6,7,8]];
-function t5(){
-    let n = 0;
-    for (let i = 0; i < arr5.length; i++){
-       n += sum(arr5[i]);
-    
-    }
-    console.log(n);
+console.group("example 5");
+const arr5 = [
+  [3, 4, 5],
+  [6, 7, 8],
+];
+function t5() {
+  let n = 0;
+  for (let i = 0; i < arr5.length; i++) {
+    n += sum(arr5[i]);
+  }
+  console.log(n);
 }
-function sum(arr){
-    let sum = 0;
-    for (let i =0; i < arr.length; i++){
-        sum += arr[i];
-    }
-    return sum;
+function sum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
 }
 
 t5();
 console.groupEnd();
+
+//_____________________________________________
+// _________________пример 6 return ';'___________________
+//                   с переносом строки
+console.group("exampe 6");
+function t7() {
+  let g = 88;
+  return g; // перенос returnна другую строчку вызывает ошипку НО можно сдлеать через скобки return (gijojijjio ijxivj) и переносить строку//
+}
+console.log(t7());
+console.groupEnd();
+
+//__________________________________________________
+
+console.groupEnd("exmple 7");
+const arr7 = [
+  [3, 4, 5],
+  [6, 7, 8],
+  [7, 7, 1],
+  [2, 2],
+  [3, 2],
+];
+
+const evenArr7 = arr7.filter(function (item) {
+  return sum(item) % 2 === 0;
+});
+console.log(evenArr7);
+console.groupEnd();
+
+// _______________________________________
+// ___________ return function________________
+
+function t8() {
+  return sum;
+}
+
+let s = t8();
+console.log(s([10, 20, 30]));
