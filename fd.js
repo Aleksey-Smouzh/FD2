@@ -576,7 +576,7 @@ f1(4, 5);
 f1(4, 45);
 
 function f2() {
-  console.log(2);
+  //console.log(2);
   return 5;
 }
 f2();
@@ -590,7 +590,7 @@ f4(4, 5);
 f4(4, 45);
 
 function f5() {
-  console.log(2);
+  //console.log(2);
   return 15;
 }
 f5();
@@ -610,23 +610,56 @@ console.log(m);
 console.log(randInt(222, 333) + 200);
 //________________________________________________
 
-
 // выводит куда угодно
-console.log(f1(100, 200))
-document.querySelector('.out-1').textContent = f1(300,400);
-document.querySelector('.out-1').style.background = 'rgb(73,356,907)';
-document.querySelector('.out-1').style.background = `rgb(${randInt(0, 255)},${randInt(0, 255)},${randInt(0, 255)})`;
+console.log(f1(100, 200));
+document.querySelector(".out-1").textContent = f1(300, 400);
+document.querySelector(".out-1").style.background = "rgb(73,356,907)";
+document.querySelector(".out-1").style.background = `rgb(${randInt(
+  0,
+  255
+)},${randInt(0, 255)},${randInt(0, 255)})`;
 //alert(f1(3, 4));
 // используеться в вырожениях
-console.log(100 * f1(3,4))
-
+console.log(100 * f1(3, 4));
 
 //вывод данных введенных подбзлвателем inputting date entered by the user
-document.querySelector('.b-3').addEventListener('click', function(){
-    const s = document.querySelector('.i-3').value;
-    document.querySelector('.out-3').innerHTML ="Hello " + clearText(s);
-    console.log("Hello " + clearText(s));
+document.querySelector(".b-3").addEventListener("click", function () {
+  const s = document.querySelector(".i-3").value;
+  document.querySelector(".out-3").innerHTML = "Hello " + clearText(s);
+  console.log("Hello " + clearText(s));
 });
-function clearText(data){
+function clearText(data) {
   return data.trim().toLowerCase();
 }
+//_________________________________________________________________________
+//__________________-прирывание функции____________________________________
+
+function t7() {
+    console.log(1);
+    return;
+    console.log(2);
+    console.log(3);
+}
+t7();
+
+//______________________эмулируем indexOf_________________________________
+function indexOfEmul(arr, num){
+for (let i = 0; i < arr.length; i++){
+if (arr[i] === num) return i
+}
+    return -1;
+}
+let result = indexOfEmul([22, 33, 44, 55], 33);
+console.log(result);
+
+//___________________________________________________________________
+// пользователь ввооодит количество лет 
+
+
+document.querySelector('.b-4').addEventListener('click', 
+function(){
+let year = +document.querySelector('.i-4').value;
+if (isNaN(year)) return;
+if (year <=0 || year > 140) return;
+document.querySelector('.out-4').innerHTML = 2021 - year;
+});
