@@ -597,15 +597,36 @@ f5();
 console.log(5 + f5());
 console.log(f4(1, 0) + f1(4, 5));
 
-
 //____________________________________________
 //_____-функция которая вычисляет случайное целое число
 
 function randInt(min, max) {
-    let rand = min + Math.random( )* (max + 1 - min);
-    return Math.floor(rand);
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
 }
 
 let m = randInt(222, 333);
 console.log(m);
-console.log(randInt(222, 333)+ 200)
+console.log(randInt(222, 333) + 200);
+//________________________________________________
+
+
+// выводит куда угодно
+console.log(f1(100, 200))
+document.querySelector('.out-1').textContent = f1(300,400);
+document.querySelector('.out-1').style.background = 'rgb(73,356,907)';
+document.querySelector('.out-1').style.background = `rgb(${randInt(0, 255)},${randInt(0, 255)},${randInt(0, 255)})`;
+//alert(f1(3, 4));
+// используеться в вырожениях
+console.log(100 * f1(3,4))
+
+
+//вывод данных введенных подбзлвателем inputting date entered by the user
+document.querySelector('.b-3').addEventListener('click', function(){
+    const s = document.querySelector('.i-3').value;
+    document.querySelector('.out-3').innerHTML ="Hello " + clearText(s);
+    console.log("Hello " + clearText(s));
+});
+function clearText(data){
+  return data.trim().toLowerCase();
+}
