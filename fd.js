@@ -567,15 +567,13 @@
 function f1(x, y) {
   // const x = 5;
   // const y = 6;
-//   console.log(x + y);
-let sum = x + y;
-return sum;
+  //   console.log(x + y);
+  let sum = x + y;
+  return sum;
 }
 
 f1(4, 5);
 f1(4, 45);
-
-
 
 function f2() {
   console.log(2);
@@ -583,21 +581,31 @@ function f2() {
 }
 f2();
 console.log(5 + f2());
-console.log(11 + 1 + 5 + f1(4,5));
-
-
+console.log(11 + 1 + 5 + f1(4, 5));
 
 function f4(r, z) {
-return r + z;
-
+  return r + z;
 }
 f4(4, 5);
-f4 (4, 45);
+f4(4, 45);
 
-function f5(){
-    console.log(2);
-    return 15;
+function f5() {
+  console.log(2);
+  return 15;
 }
 f5();
 console.log(5 + f5());
-console.log(f4(1,0) + f1(4,5))
+console.log(f4(1, 0) + f1(4, 5));
+
+
+//____________________________________________
+//_____-функция которая вычисляет случайное целое число
+
+function randInt(min, max) {
+    let rand = min + Math.random( )* (max + 1 - min);
+    return Math.floor(rand);
+}
+
+let m = randInt(222, 333);
+console.log(m);
+console.log(randInt(222, 333)+ 200)
