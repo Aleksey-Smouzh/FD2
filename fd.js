@@ -773,10 +773,31 @@ a[a.length - 1] = t;
 console.log(a);
 
 let out = "";
-for (let i = 0; i < a.length; i++) {
+for (let i = 0; i <= a.length; i++) {
     if (a[i] % 2 ==0){
         out += a[i] + "- -";
     }
-  
-  document.querySelector(".out-1").innerHTML = out;
 }
+  document.querySelector(".out-1").innerHTML = out;
+
+// ___________________ нужно запомнить 
+// ________________ нахождение максимума в массиве___
+
+let b = [ 4, 2, 5 , 23, 435, 1 , 2, 6 ,12,];
+let max = b[0];
+for (let i = 0; i < b.length; i++){
+    if (b[i] > max) {
+        max = b[i];
+    }
+}
+console.log("max:  " + max);
+
+// ____________________________________________
+//_________________нахождение суммы______________
+
+let sum = 0;
+for (let i = 0; i < b.length; i++){
+    sum = sum + b[i]
+    }
+
+console.log("sum:  " + sum);
