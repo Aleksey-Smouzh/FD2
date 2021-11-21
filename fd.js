@@ -744,20 +744,39 @@
 // z[3] = p;
 // console.log(z);
 
-let a = ["боклажан", 1, [5], 9, "мармилад"];
+// let a = ["боклажан", 1, [5], 9, "мармилад"];
+
+// console.log(a);
+// let z = a[0];
+// a[0] = a[2];
+// a[2] = z;
+// console.log(a);
+
+// let b = [4, 6, 3, 1, 5, 2];
+
+// let t = b[0];
+// b[0] = b[3];
+// b[3] = t;
+// let x = b[1];
+// b[1] = b[5];
+// b[5] = x;
+// console.log(b);
+//____________________________________________
+let a = [1, 2, 3, 4];
 
 console.log(a);
-let z = a[0];
-a[0] = a[2];
-a[2] = z;
+
+let t = a[0];
+a[0] = a[a.length - 1];
+a[a.length - 1] = t;
+
 console.log(a);
 
-let b = [4, 6, 3, 1, 5, 2];
-
-let t = b[0];
-b[0] = b[3];
-b[3] = t;
-let x = b[1];
-b[1] = b[5];
-b[5] = x;
-console.log(b);
+let out = "";
+for (let i = 0; i < a.length; i++) {
+    if (a[i] % 2 ==0){
+        out += a[i] + "- -";
+    }
+  
+  document.querySelector(".out-1").innerHTML = out;
+}
