@@ -801,3 +801,14 @@ for (let i = 0; i < b.length; i++){
     }
 
 console.log("sum:  " + sum);
+
+//______________________________________________
+
+// _____________ARRAY__________________________
+
+let interable = [19, 20, 30]
+
+for (let value of interable) {
+    value += 1;
+    console.log(value)
+}
