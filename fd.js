@@ -766,4 +766,16 @@
 
 document.getElementById('out').innerHTML = 'hellow';
 document.getElementById('out').innerHTML = 2019;
-document.getElementById('out').innerHTML = '<b>2021</b>'
+document.getElementById('out').innerHTML = '<b>202</b>'
+
+document.querySelector('.header').innerHTML = 1981;
+document.querySelector('#one').innerHTML = 1983;
+// document.getElementById('#one').innerHTML = 1987;
+
+let b;
+let a = document.querySelector('#one'); //внутрь а получил пораграф
+let c; //обявление
+c = document.querySelector('.header'); // присвоение
+
+a.innerHTML = 9999;
+c.innerHTML = 100000;
