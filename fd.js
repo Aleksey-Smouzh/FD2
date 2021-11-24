@@ -762,53 +762,8 @@
 // b[5] = x;
 // console.log(b);
 //____________________________________________
-let a = [1, 2, 3, 4];
+// 
 
-console.log(a);
-
-let t = a[0];
-a[0] = a[a.length - 1];
-a[a.length - 1] = t;
-
-console.log(a);
-
-let out = "";
-for (let i = 0; i <= a.length; i++) {
-    if (a[i] % 2 ==0){
-        out += a[i] + "- -";
-    }
-}
-  document.querySelector(".out-1").innerHTML = out;
-
-// ___________________ нужно запомнить 
-// ________________ нахождение максимума в массиве___
-
-let b = [ 4, 2, 5 , 23, 435, 1 , 2, 6 ,12,];
-let max = b[0];
-for (let i = 0; i < b.length; i++){
-    if (b[i] > max) {
-        max = b[i];
-    }
-}
-console.log("max:  " + max);
-
-// ____________________________________________
-//_________________нахождение суммы______________
-
-let sum = 0;
-for (let i = 0; i < b.length; i++){
-    sum = sum + b[i]
-    }
-
-console.log("sum:  " + sum);
-
-//______________________________________________
-
-// _____________ARRAY__________________________
-
-let interable = [19, 20, 30]
-
-for (let value of interable) {
-    value += 1;
-    console.log(value)
-}
+document.getElementById('out').innerHTML = 'hellow';
+document.getElementById('out').innerHTML = 2019;
+document.getElementById('out').innerHTML = '<b>2021</b>'
