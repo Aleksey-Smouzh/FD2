@@ -6,3 +6,21 @@ div.section {
     border-top: 1px dashed black;
     border-bottom: 1px dashed black;
 }
+.container_P , .container_name  {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}  
+
+.container_a {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;  
+}
