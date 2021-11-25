@@ -762,20 +762,52 @@
 // b[5] = x;
 // console.log(b);
 //____________________________________________
-// 
+//
 
-document.getElementById('out').innerHTML = 'hellow';
-document.getElementById('out').innerHTML = 2019;
-document.getElementById('out').innerHTML = '<b>202</b>'
+// document.getElementById('out').innerHTML = 'hellow';
+// document.getElementById('out').innerHTML = 2019;
+// document.getElementById('out').innerHTML = '<b>202</b>'
 
-document.querySelector('.header').innerHTML = 1981;
-document.querySelector('#one').innerHTML = 1983;
-// document.getElementById('#one').innerHTML = 1987;
+// document.querySelector('.header').innerHTML = 1981;
+// document.querySelector('#one').innerHTML = 1983;
+// // document.getElementById('#one').innerHTML = 1987;
 
-let b;
-let a = document.querySelector('#one'); //внутрь а получил пораграф
-let c; //обявление
-c = document.querySelector('.header'); // присвоение
+// let b;
+// let a = document.querySelector('#one'); //внутрь а получил пораграф
+// let c; //обявление
+// c = document.querySelector('.header'); // присвоение
 
-a.innerHTML = 9999;
-c.innerHTML = 100000;
+// a.innerHTML = 9999;
+// c.innerHTML = 100000;
+
+document.querySelector(".container").style.background = "blue";
+document.querySelector("#title").style.color = "rgb(73,356,001)";
+document.querySelector("#text").style.color = "rgb(733,356,009)";
+
+document.querySelector("#text_p");
+let text = document.querySelector("#text_p");
+text.style.color = "red";
+
+// const arrey = ['#text_p1', '#text_p2']
+// arrey.forEach(function(item){
+
+// });
+
+// const colorText = arrey [0];
+// arrey = 'red';
+
+// document.getElementsByClassName('name3').innerHTML = "Pupkin";
+// document.getElementsByClassName('name').innerHTML = 'pupkin';
+
+const array = [
+  { name: "Yandex", href: "https://yandex.by" },
+//   { name: "Google", href: "https://google.com" },
+//   { name: "mail", href: "https://mail.ru" },
+];
+
+const links = document.getElementsByTagName("a");
+const linksArray = Array.from(links);
+linksArray.forEach((item) => {
+list += `<a>$ { item }</a>`
+});
+links.innerHTML = list;
