@@ -780,13 +780,13 @@
 // a.innerHTML = 9999;
 // c.innerHTML = 100000;
 
-document.querySelector(".container").style.background = "blue";
-document.querySelector("#title").style.color = "rgb(73,356,001)";
-document.querySelector("#text").style.color = "rgb(733,356,009)";
+// document.querySelector(".container").style.background = "blue";
+// document.querySelector("#title").style.color = "rgb(73,356,001)";
+// document.querySelector("#text").style.color = "rgb(733,356,009)";
 
-document.querySelector("#text_p");
-let text = document.querySelector("#text_p");
-text.style.color = "red";
+// document.querySelector("#text_p");
+// let text = document.querySelector("#text_p");
+// text.style.color = "red";
 
 // const arrey = ['#text_p1', '#text_p2']
 // arrey.forEach(function(item){
@@ -799,15 +799,51 @@ text.style.color = "red";
 // document.getElementsByClassName('name3').innerHTML = "Pupkin";
 // document.getElementsByClassName('name').innerHTML = 'pupkin';
 
-const array = [
-  { name: "Yandex", href: "https://yandex.by" },
-//   { name: "Google", href: "https://google.com" },
-//   { name: "mail", href: "https://mail.ru" },
-];
+// const array = [
+//   { name: "Yandex", href: "https://yandex.by" },
+// //   { name: "Google", href: "https://google.com" },
+// //   { name: "mail", href: "https://mail.ru" },
+// ];
 
-const links = document.getElementsByTagName("a");
-const linksArray = Array.from(links);
-linksArray.forEach((item) => {
-list += `<a>$ { item }</a>`
-});
-links.innerHTML = list;
+// const links = document.getElementsByTagName("a");
+// const linksArray = Array.from(links);
+// linksArray.forEach((item) => {
+// list += `<a>$ { item }</a>`
+// });
+// links.innerHTML = list;
+
+
+//__________________________________________________________________________
+// const footer = document.querySelector('.out');
+
+// let t = (tag, classList) => text => `<${tag} class="${classList.join(' ')}">${text}</${tag}>`;
+// // function t(tag){
+// //     return function(text){
+// //        return `<${tag}>${text}</${tag}>`; 
+// //     }
+// // }
+
+
+
+// let div = t('h1', ['header', 'red']);
+// let p = t('p', ['bold']);
+// let elem = div('hello');
+// let elem2 = p('some text');
+
+// footer.innerHTML = elem;
+// footer.innerHTML += elem2;
+
+//_____________________________________________________________
+
+let footer = document.createElement('footer');
+footer.className = "msg";
+footer.innerHTML = " ";
+document.body.append(footer);
+
+let footerList = document.querySelector('footer');
+let nav = document.createElement('nav');
+let ul = document.createElement('ul');
+let li = document.createElement('li');
+footerList.prepend(nav);
+nav.prepend(ul);
+ul.prepend(li);
