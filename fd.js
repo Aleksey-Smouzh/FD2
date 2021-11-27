@@ -812,38 +812,136 @@
 // });
 // links.innerHTML = list;
 
-
 //__________________________________________________________________________
-// const footer = document.querySelector('.out');
+//  const lists1 = document.querySelector('.list');
 
-// let t = (tag, classList) => text => `<${tag} class="${classList.join(' ')}">${text}</${tag}>`;
-// // function t(tag){
-// //     return function(text){
-// //        return `<${tag}>${text}</${tag}>`; 
-// //     }
-// // }
+//  //let t = (tag, classList) => text => `<${tag} class="${classList.join(' ')}">${text}</${tag}>`;
+//  function t(tag){
+//      return function(text){
+//         return `<${tag}>${text}</${tag}>`;
+//      }
+//  }
 
+//  let div = t('h1', ['header', 'red']);
+//  let p = t('p', ['bold']);
+//  let elem = div('hello');
+//  let elem2 = p('some text');
 
-
-// let div = t('h1', ['header', 'red']);
-// let p = t('p', ['bold']);
-// let elem = div('hello');
-// let elem2 = p('some text');
-
-// footer.innerHTML = elem;
-// footer.innerHTML += elem2;
+//  lists1.innerHTML = elem;
+//  lists1.innerHTML += elem2;
 
 //_____________________________________________________________
 
-let footer = document.createElement('footer');
-footer.className = "msg";
-footer.innerHTML = " ";
+let footer = document.createElement("footer");
+footer.className = "footer";
 document.body.append(footer);
 
-let footerList = document.querySelector('footer');
-let nav = document.createElement('nav');
-let ul = document.createElement('ul');
-let li = document.createElement('li');
+let footerList = document.querySelector("footer");
+footerList.style.width = "1200px";
+footerList.style.height = '150px';
+footerList.style.paddingTop = "10px";
+footerList.style.paddingBottom = "15px";
+footerList.style.color = "rgba(255, 255, 255, 1)";
+footerList.style.background = " rgba(30, 26, 26, 1)";
+
+
+
+
+let nav = document.createElement("nav");
+nav.className = "menu";
+
+let cont = document.createElement("div");
+cont.classList.add("contacts");
+cont.innerHTML = "pdmkmmdc";
+
+let ul = document.createElement("ul");
+ul.className = "list";
+
 footerList.prepend(nav);
 nav.prepend(ul);
-ul.prepend(li);
+
+
+const arr = [""];
+
+const listForFooter = document.querySelector(".list");
+
+let lists = "  ";
+arr.forEach((item) => {
+  lists += `<li>${item}</li> `;
+});
+listForFooter.innerHTML = lists;
+
+const pointOne = document.querySelector("li");
+pointOne.className = "point_home_page";
+pointOne.style.listStyleType = "none";
+pointOne.style.display = "blok";
+
+
+
+
+const arr1 = ["Юридический адрес:", "Республика Зазеркалье", "г. Лкаморье", "220013, ул. Потриса Лулумбы 123."];
+
+const listForFooter1 = document.querySelector(".point_home_page");
+
+let lists1 = "  ";
+arr1.forEach((item) => {
+  lists1 += `<p>${item}</p> `;
+});
+listForFooter1.innerHTML = lists1;
+
+
+
+
+
+
+
+
+
+
+//________________________________________________________
+
+//  ul.prepend(li1);
+//  ul.prepend(li2);
+//  ul.prepend(li3);
+
+// const pointOne = document.querySelector("li");
+// pointOne.className = "point_home_page";
+
+// const link1 = document.createElement("a");
+// link1.className = "link_home_page";
+// link1.innerHTML = "Home page";
+
+//  const pointTwo = document.querySelector("li");
+//   pointTwo.className = "point_about_us"
+
+//let link2 = document.createElement("a");
+//link2.className = "link_about_us";
+
+//let pointThree = document.querySelector("li");
+//pointThree. className = "point_contacts";
+
+//let link3 = document.createElement("a");
+//link3.className = "link_contacts";
+
+//  pointOne.prepend(link1);
+//pointTwo.prepend(link2);
+//pointThree.prepend(link3);
+
+//  let myArray = [{className = "point_about_us"}, {className = "point_contacts"},];
+
+//  $('li').each( function () {
+//      this.className = myArray.shift();
+//  });
+
+//  <script>
+//         let arr = ['BMW', 'Mercedes', 'Volkswagen', 'Toyota'];
+
+//         const carList = document.querySelector('.car-list');
+//         let list = '';
+
+//         arr.forEach(item => {
+//             list += `<li>${ item }</li>`
+//         });
+
+//         carList.innerHTML = list;
+//     </script>
