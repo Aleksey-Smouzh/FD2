@@ -838,28 +838,20 @@ document.body.append(footer);
 
 let footerList = document.querySelector("footer");
 footerList.style.width = "1200px";
-footerList.style.height = '150px';
+footerList.style.height = "150px";
 footerList.style.paddingTop = "10px";
 footerList.style.paddingBottom = "15px";
 footerList.style.color = "rgba(255, 255, 255, 1)";
 footerList.style.background = " rgba(30, 26, 26, 1)";
 
-
-
-
 let nav = document.createElement("nav");
 nav.className = "menu";
-
-let cont = document.createElement("div");
-cont.classList.add("contacts");
-cont.innerHTML = "pdmkmmdc";
 
 let ul = document.createElement("ul");
 ul.className = "list";
 
 footerList.prepend(nav);
 nav.prepend(ul);
-
 
 const arr = [""];
 
@@ -876,21 +868,79 @@ pointOne.className = "point_home_page";
 pointOne.style.listStyleType = "none";
 pointOne.style.display = "blok";
 
-
-
-
-const arr1 = ["Юридический адрес:", "Республика Зазеркалье", "г. Лкаморье", "220013, ул. Потриса Лулумбы 123."];
+const arr1 = [
+  "Юридический адрес:",
+  "Республика Зазеркалье",
+  "г. Лкаморье",
+  "220013, ул. Потриса Лулумбы 123.",
+];
 
 const listForFooter1 = document.querySelector(".point_home_page");
 
 let lists1 = "  ";
+
 arr1.forEach((item) => {
   lists1 += `<p>${item}</p> `;
 });
 listForFooter1.innerHTML = lists1;
 
+const column2 = document.createElement("nav");
+column2.className = "columnTwo";
+column2.style.display = "flex";
+footer.append(column2);
 
 
+const columnTwoLi = document.createElement('li');
+column2.append(columnTwoLi);
+columnTwoLi.className = 'fax';
+columnTwoLi.innerHTML = '8(200)778-778-78';
+
+const columnTwoLi1 = document.createElement('li');
+column2.append(columnTwoLi1)
+columnTwoLi1.className = 'phone';
+columnTwoLi1.innerHTML = '+999(00)123-321-21';
+
+
+
+
+// const fax = document.getElementsByTagName('li');
+// fax.className = 'fax';
+// fax.innerHTML = "ybrebyxbv";
+console.log(columnTwoLi1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //const column2Div = document.getElementsByClassName("columnTwo");
+// for (let i = 0; i <= 1 ; i++) {
+//   let li2 = document.createElement("li");
+// //   li2.innerHTML = "ijojrujeju";
+
+
+
+// column2.append(li2);
+// };
+
+// const fax = document.getElementsByTagName('li');
+// fax[1].className = 'fax';
+// fax.innerHTML = "ybrebyxbv";
+
+// const phone = document.getElementsByTagName('li');
+// phone[2].className = 'phone';
+// phone.innerHTML = 'huihihihh';
+
+// console.log(fax[2])
 
 
 
