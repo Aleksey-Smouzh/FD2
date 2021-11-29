@@ -907,6 +907,7 @@ columnTwoLi1.innerHTML = '+999(00)123-321-21';
 // fax.className = 'fax';
 // fax.innerHTML = "ybrebyxbv";
 console.log(columnTwoLi1)
+column2
 
 
 
