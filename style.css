@@ -22,5 +22,17 @@ div.section {
     margin: 20px 0;
     padding: 20px 0;
     border-top: 1px dashed black;
-    border-bottom: 1px dashed black;  
+    border-bottom: 1px dashed black;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    
+}
+
+.close {
+background-color: chartreuse;
 }

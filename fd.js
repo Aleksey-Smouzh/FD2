@@ -830,105 +830,85 @@
 //  lists1.innerHTML = elem;
 //  lists1.innerHTML += elem2;
 
-//_____________________________________________________________
+//________________________дз внизу_____________________________________
 
-let footer = document.createElement("footer");
-footer.className = "footer";
-document.body.append(footer);
+// let footer = document.createElement("footer");
+// footer.className = "footer";
+// document.body.append(footer);
 
-let footerList = document.querySelector("footer");
-footerList.style.width = "1200px";
-footerList.style.height = "150px";
-footerList.style.paddingTop = "10px";
-footerList.style.paddingBottom = "15px";
-footerList.style.color = "rgba(255, 255, 255, 1)";
-footerList.style.background = " rgba(30, 26, 26, 1)";
+// let footerList = document.querySelector("footer");
+// footerList.style.width = "1200px";
+// footerList.style.height = "150px";
+// footerList.style.paddingTop = "10px";
+// footerList.style.paddingBottom = "15px";
+// footerList.style.color = "rgba(255, 255, 255, 1)";
+// footerList.style.background = " rgba(30, 26, 26, 1)";
 
-let nav = document.createElement("nav");
-nav.className = "menu";
+// let nav = document.createElement("nav");
+// nav.className = "menu";
 
-let ul = document.createElement("ul");
-ul.className = "list";
+// let ul = document.createElement("ul");
+// ul.className = "list";
 
-footerList.prepend(nav);
-nav.prepend(ul);
+// footerList.prepend(nav);
+// nav.prepend(ul);
 
-const arr = [""];
+// const arr = [""];
 
-const listForFooter = document.querySelector(".list");
+// const listForFooter = document.querySelector(".list");
 
-let lists = "  ";
-arr.forEach((item) => {
-  lists += `<li>${item}</li> `;
-});
-listForFooter.innerHTML = lists;
+// let lists = "  ";
+// arr.forEach((item) => {
+//   lists += `<li>${item}</li> `;
+// });
+// listForFooter.innerHTML = lists;
 
-const pointOne = document.querySelector("li");
-pointOne.className = "point_home_page";
-pointOne.style.listStyleType = "none";
-pointOne.style.display = "blok";
+// const pointOne = document.querySelector("li");
+// pointOne.className = "point_home_page";
+// pointOne.style.listStyleType = "none";
+// pointOne.style.display = "blok";
 
-const arr1 = [
-  "Юридический адрес:",
-  "Республика Зазеркалье",
-  "г. Лкаморье",
-  "220013, ул. Потриса Лулумбы 123.",
-];
+// const arr1 = [
+//   "Юридический адрес:",
+//   "Республика Зазеркалье",
+//   "г. Лкаморье",
+//   "220013, ул. Потриса Лулумбы 123.",
+// ];
 
-const listForFooter1 = document.querySelector(".point_home_page");
+// const listForFooter1 = document.querySelector(".point_home_page");
 
-let lists1 = "  ";
+// let lists1 = "  ";
 
-arr1.forEach((item) => {
-  lists1 += `<p>${item}</p> `;
-});
-listForFooter1.innerHTML = lists1;
+// arr1.forEach((item) => {
+//   lists1 += `<p>${item}</p> `;
+// });
+// listForFooter1.innerHTML = lists1;
 
-const column2 = document.createElement("nav");
-column2.className = "columnTwo";
-column2.style.display = "flex";
-footer.append(column2);
+// const column2 = document.createElement("nav");
+// column2.className = "columnTwo";
+// column2.style.display = "flex";
+// footer.append(column2);
 
+// const columnTwoLi = document.createElement("li");
+// column2.append(columnTwoLi);
+// columnTwoLi.className = "fax";
+// columnTwoLi.innerHTML = "8(200)778-778-78";
 
-const columnTwoLi = document.createElement('li');
-column2.append(columnTwoLi);
-columnTwoLi.className = 'fax';
-columnTwoLi.innerHTML = '8(200)778-778-78';
+// const columnTwoLi1 = document.createElement("li");
+// column2.append(columnTwoLi1);
+// columnTwoLi1.className = "phone";
+// columnTwoLi1.innerHTML = "+999(00)123-321-21";
 
-const columnTwoLi1 = document.createElement('li');
-column2.append(columnTwoLi1)
-columnTwoLi1.className = 'phone';
-columnTwoLi1.innerHTML = '+999(00)123-321-21';
-
-
-
-
-// const fax = document.getElementsByTagName('li');
-// fax.className = 'fax';
-// fax.innerHTML = "ybrebyxbv";
-console.log(columnTwoLi1)
-column2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// // const fax = document.getElementsByTagName('li');
+// // fax.className = 'fax';
+// // fax.innerHTML = "ybrebyxbv";
+// console.log(columnTwoLi1);
+// column2;
+//_____________________________________дз на верху__________________
 // //const column2Div = document.getElementsByClassName("columnTwo");
 // for (let i = 0; i <= 1 ; i++) {
 //   let li2 = document.createElement("li");
 // //   li2.innerHTML = "ijojrujeju";
-
-
 
 // column2.append(li2);
 // };
@@ -943,13 +923,100 @@ column2
 
 // console.log(fax[2])
 
-
-
-
-
-
-
 //________________________________________________________
+// const button1 = document.getElementsByTagName('button');
+//  //console.log("button1", button);
+// const button = button1[0];
+
+//console.log("button1", button);
+
+// button.onclick = function () {
+//   alert("1");  //
+
+//   console.log("button after onclick", button);
+// };
+
+
+// button.addEventListener('click', function(){
+//     alert(3)
+// })
+// button.addEventListener('click', function(){
+//      alert(4)
+// });
+
+// const button = document.getElementsByTagName('button');
+//  //console.log("button1", button);
+// const button = button[1];
+
+// const button = document.getElementsByTagName('button');
+//  //console.log("button1", button);
+// const button = button[2];
+
+// const func = () => {
+//     alert(7)
+// };
+
+// button.addEventListener('click', func);
+
+
+// const click1 =  document.getElementById('click');
+//  click1.addEventListener('click', function (){
+//      alert(100500)
+//  });
+// console.log(click1);
+
+// const func = () => {
+//     alert(1050);
+
+// };
+// click1.addEventListener('click', func);
+
+// const click2 = document.getElementsByTagName('button');
+// console.log(click2)
+// const click2a = click2[1];
+
+
+// click2a.addEventListener('click', function () {
+//     alert(1234567)
+// });
+// ------------------------------------------------
+
+const buttonPress = document.getElementById('the_button');
+console.log(buttonPress )
+
+const coun = document.getElementById('counter');
+
+
+buttonPress.addEventListener('click', () => {
+    let numb = Number(coun.innerText);
+
+    console.log(numb)  
+    // coun.innerText = ++numb
+    coun.innerText = ++numb
+    if (numb === 5){
+       alert ('5 click!!!!!') 
+    } else {
+        coun.style.display = 'none';
+    }
+});
+
+console.log(coun)
+
+
+const clo = document.getElementsByClassName('close1')
+
+const close = document.getElementsByClassName('container');
+console.log(close);
+document.close.addEventListener('click', (event) => {
+    if(event.target.tagName === 'p') {
+        if (event.target.style.display === "") {
+            event.target.style.display = 'none'
+        }
+    }
+});
+
+
+
 
 //  ul.prepend(li1);
 //  ul.prepend(li2);
