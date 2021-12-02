@@ -936,7 +936,6 @@
 //   console.log("button after onclick", button);
 // };
 
-
 // button.addEventListener('click', function(){
 //     alert(3)
 // })
@@ -958,7 +957,6 @@
 
 // button.addEventListener('click', func);
 
-
 // const click1 =  document.getElementById('click');
 //  click1.addEventListener('click', function (){
 //      alert(100500)
@@ -975,48 +973,42 @@
 // console.log(click2)
 // const click2a = click2[1];
 
-
 // click2a.addEventListener('click', function () {
 //     alert(1234567)
 // });
 // ------------------------------------------------
 
-const buttonPress = document.getElementById('the_button');
-console.log(buttonPress )
+// const buttonPress = document.getElementById('the_button');
+// console.log(buttonPress )
 
-const coun = document.getElementById('counter');
+// const coun = document.getElementById('counter');
 
+// buttonPress.addEventListener('click', () => {
+//     let numb = Number(coun.innerText);
 
-buttonPress.addEventListener('click', () => {
-    let numb = Number(coun.innerText);
+//     console.log(numb)
+//     // coun.innerText = ++numb
+//     coun.innerText = ++numb
+//     if (numb === 5){
+//        alert ('5 click!!!!!')
+//     } else {
+//         coun.style.display = 'none';
+//     }
+// });
 
-    console.log(numb)  
-    // coun.innerText = ++numb
-    coun.innerText = ++numb
-    if (numb === 5){
-       alert ('5 click!!!!!') 
-    } else {
-        coun.style.display = 'none';
-    }
-});
+// console.log(coun)
 
-console.log(coun)
+// const clo = document.getElementsByClassName('close1')
 
-
-const clo = document.getElementsByClassName('close1')
-
-const close = document.getElementsByClassName('container');
-console.log(close);
-document.close.addEventListener('click', (event) => {
-    if(event.target.tagName === 'p') {
-        if (event.target.style.display === "") {
-            event.target.style.display = 'none'
-        }
-    }
-});
-
-
-
+// const close = document.getElementsByClassName('container');
+// console.log(close);
+// document.close.addEventListener('click', (event) => {
+//     if(event.target.tagName === 'p') {
+//         if (event.target.style.display === "") {
+//             event.target.style.display = 'none'
+//         }
+//     }
+// });
 
 //  ul.prepend(li1);
 //  ul.prepend(li2);
@@ -1063,3 +1055,56 @@ document.close.addEventListener('click', (event) => {
 
 //         carList.innerHTML = list;
 //     </script>
+
+// const forma = document.createElement("form");
+// const forman = document.getElementsByTagName("form");
+// document.body.append(forman);
+
+// const diva = document.createElement("div");
+// const div = document.getElementsByTagName("div");
+// forma.append(div);
+
+// const pa = document.createElement("p");
+// const pan = document.getElementsByTagName("p");
+// dispatchEvent.append(pan);
+
+// console.log(div);
+
+const buttonPress = document.getElementById('the_button');
+//  console.log(buttonPress )
+
+ const coun = document.getElementById('counter');
+
+ buttonPress.addEventListener('click', () => {
+     let numb = Number(coun.innerText);
+
+     console.log(numb)
+    // coun.innerText = ++numb
+     coun.innerText = --numb
+     if (numb === 5){
+        alert ('5 click!!!!!')
+     } else {
+         coun.style.display = 'none';
+     }
+ });
+
+//  console.log(coun)
+
+
+ const pla = document.getElementById('plas')
+ const posi = document.getElementById('positiv')
+ pla.addEventListener('click', () =>{
+     let num = Number(posi.innerText);
+     posi.innerText = ++num
+     
+ });
+ console.log(pla)
+
+ const min = document.getElementById('minus')
+ const nega = document.getElementById('negativ')
+ min.addEventListener('click', () =>{
+     let num = Number(nega.innerText);
+     nega.innerText = --num
+     
+ });
+ console.log(min)
