@@ -36,3 +36,11 @@ div.section {
 .close {
 background-color: chartreuse;
 }
+
+.coordinats{
+width: 200px;
+height: 300px;
+border-bottom: coral;
+border-top: coral;
+border: coral;
+}

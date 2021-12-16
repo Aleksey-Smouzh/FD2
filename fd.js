@@ -978,25 +978,24 @@
 // });
 // ------------------------------------------------
 
-// const buttonPress = document.getElementById('the_button');
-// console.log(buttonPress )
+// const buttonPress = document.getElementById("the_button");
+// console.log(buttonPress);
 
-// const coun = document.getElementById('counter');
+// const coun = document.getElementById("counter");
 
-// buttonPress.addEventListener('click', () => {
-//     let numb = Number(coun.innerText);
+// buttonPress.addEventListener("click", () => {
+//   let numb = Number(coun.innerText);
 
-//     console.log(numb)
-//     // coun.innerText = ++numb
-//     coun.innerText = ++numb
-//     if (numb === 5){
-//        alert ('5 click!!!!!')
-//     } else {
-//         coun.style.display = 'none';
-//     }
+//   console.log(numb);
+//   // coun.innerText = ++numb
+//   coun.innerText = ++numb;
+//   if (numb === 5) {
+//     alert("5 click!!!!!");
+//   } else {
+//   }
 // });
 
-// console.log(coun)
+// console.log(coun);
 
 // const clo = document.getElementsByClassName('close1')
 
@@ -1070,41 +1069,126 @@
 
 // console.log(div);
 
-const buttonPress = document.getElementById('the_button');
-//  console.log(buttonPress )
+// const buttonPress = document.getElementById('the_button');
+// //  console.log(buttonPress )
 
- const coun = document.getElementById('counter');
+//  const coun = document.getElementById('counter');
 
- buttonPress.addEventListener('click', () => {
-     let numb = Number(coun.innerText);
+//  buttonPress.addEventListener('click', () => {
+//      let numb = Number(coun.innerText);
 
-     console.log(numb)
-    // coun.innerText = ++numb
-     coun.innerText = --numb
-     if (numb === 5){
-        alert ('5 click!!!!!')
-     } else {
-         coun.style.display = 'none';
-     }
- });
+//      console.log(numb)
+//     // coun.innerText = ++numb
+//      coun.innerText = --numb
+//      if (numb === 5){
+//         alert ('5 click!!!!!')
+//      } else {
+//          coun.style.display = 'none';
+//      }
+//  });
 
 //  console.log(coun)
+//____________________________________________________________________
+// const pla = document.getElementById("plas");
+// const posi = document.getElementById("positiv");
+// pla.addEventListener("click", () => {
+//   let num = Number(posi.innerText);
+//   posi.innerText = ++num;
+// });
+// console.log(pla);
 
+// const min = document.getElementById("minus");
+// const nega = document.getElementById("negativ");
+// min.addEventListener("click", () => {
+//   let num = Number(nega.innerText);
+//   nega.innerText = --num;
+// });
+// console.log(min);
+//______________________________________________________________--
 
- const pla = document.getElementById('plas')
- const posi = document.getElementById('positiv')
- pla.addEventListener('click', () =>{
-     let num = Number(posi.innerText);
-     posi.innerText = ++num
-     
- });
- console.log(pla)
+// const press = document.getElementById('press_li')
+// press_li.addEventListener('click', (event) => {
+// console.log(event.target.tagName)
+// if(event.target.tagName ==="LI"){
 
- const min = document.getElementById('minus')
- const nega = document.getElementById('negativ')
- min.addEventListener('click', () =>{
-     let num = Number(nega.innerText);
-     nega.innerText = --num
-     
- });
- console.log(min)
+// }
+// });
+
+// const coord = document.getElementsByClassName('coordinats')
+
+// coord.addEventListener('', function (event) {
+//     console.log(event)
+// });
+
+// document.body.addEventListener('keydown', function (event) {
+//     console.log(event)
+// })
+
+// ___________________________________________________________________
+
+// const form = document.forms
+// console.log(form)
+
+// form.addEventListener('blur', (event) => {
+//   console.log(event.target.value);
+
+// });
+// const input =document.forms
+// input.onblir = function () {
+//   if (!input.value.includes("@")) {
+//     input.classList.add("invalid");
+//     error.innerHTML = "посмотри какую дичь ты написал!";
+//   }
+// };
+// input.onfocus = function () {
+//   if (this.classList.contains("invalid")) {
+//     this.classList.remove("invalid");
+//     error.innerHTML = "";
+//   }
+// };
+//-___________________________________________________________
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+// });
+
+//_______________запрещает отравку данных на сервер/
+
+// local storage_____________________________
+
+// const obj = {
+//   name: "Ivan",
+// };
+
+// localStorage.setItem("obj", JSON.stringify(obj));
+
+// const value = localStorage.getItem("obj");
+// console.log(JSON.parse(value));
+
+function login() {
+  let userName = document.querySelector("input.userName");
+  let password = document.querySelector("input.password");
+  let buttom = document.querySelector("input.buttom");
+  //document.querySelector('form.log_in').innerHTML = nikname + passw;
+
+  let nikname = userName.value;
+  let passw = password.value;
+  for (let i = 0; i < nikname.length; i++) {
+    if (nikname.length < 5) {
+      alert("эээ придумай  имя другое ( придумай больше 5и символов)");
+    }
+  }
+  
+    if (passw.length < 5) {
+      alert("ой опять слишком короткий пароль ( придумай больше 5и сивовлов)");
+    }
+  
+
+  const obj = {
+    name: nikname,
+    password: passw,
+  };
+  localStorage.setItem("obj", JSON.stringify(obj));
+  const value = localStorage.getItem("obj");
+  onsole.log(JSON.parse(value));
+}
+document.form.onsubmit = login;
