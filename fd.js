@@ -1172,23 +1172,32 @@ function login() {
 
   let nikname = userName.value;
   let passw = password.value;
-  for (let i = 0; i < nikname.length; i++) {
     if (nikname.length < 5) {
       alert("эээ придумай  имя другое ( придумай больше 5и символов)");
+    return;
     }
-  }
-  
+    console.log(123)
+
     if (passw.length < 5) {
       alert("ой опять слишком короткий пароль ( придумай больше 5и сивовлов)");
+      return;
     }
-  
+    console.log(123)
 
-  const obj = {
-    name: nikname,
-    password: passw,
-  };
+    const array = passw.split('');
+    console.log(array)
+
+    const obj = {
+      name: nikname,
+      password: passw,
+    };
+
+
   localStorage.setItem("obj", JSON.stringify(obj));
   const value = localStorage.getItem("obj");
-  onsole.log(JSON.parse(value));
+  console.log(JSON.parse(value));
 }
 document.form.onsubmit = login;
+
+
+
