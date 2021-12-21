@@ -1164,40 +1164,59 @@
 // const value = localStorage.getItem("obj");
 // console.log(JSON.parse(value));
 
-function login() {
-  let userName = document.querySelector("input.userName");
-  let password = document.querySelector("input.password");
-  let buttom = document.querySelector("input.buttom");
-  //document.querySelector('form.log_in').innerHTML = nikname + passw;
+// function login() {
+//   let userName = document.querySelector("input.userName");
+//   let password = document.querySelector("input.password");
+//   let buttom = document.querySelector("input.buttom");
+//   //document.querySelector('form.log_in').innerHTML = nikname + passw;
 
-  let nikname = userName.value;
-  let passw = password.value;
-    if (nikname.length < 5) {
-      alert("эээ придумай  имя другое ( придумай больше 5и символов)");
-    return;
-    }
-    console.log(123)
+//   let nikname = userName.value;
+//   let passw = password.value;
+//     if (nikname.length < 5) {
+//       alert("эээ придумай  имя другое ( придумай больше 5и символов)");
+//     return;
+//     }
+//     console.log(123)
 
-    if (passw.length < 5) {
-      alert("ой опять слишком короткий пароль ( придумай больше 5и сивовлов)");
-      return;
-    }
-    console.log(123)
+//     if (passw.length < 5) {
+//       alert("ой опять слишком короткий пароль ( придумай больше 5и сивовлов)");
+//       return;
+//     }
+//     console.log(123)
 
-    const array = passw.split('');
-    console.log(array)
+//     const array = passw.split('');
+//     console.log(array)
 
-    const obj = {
-      name: nikname,
-      password: passw,
-    };
+//     const obj = {
+//       name: nikname,
+//       password: passw,
+//     };
 
 
-  localStorage.setItem("obj", JSON.stringify(obj));
-  const value = localStorage.getItem("obj");
-  console.log(JSON.parse(value));
+//   localStorage.setItem("obj", JSON.stringify(obj));
+//   const value = localStorage.getItem("obj");
+//   console.log(JSON.parse(value));
+// }
+// document.form.onsubmit = login;
+//___________________________________________________
+
+
+//document.cookie = " user = Pupkin";
+//alert(document.cookie)
+
+
+
+const  object = {
+  name:  "jon",
+   surname: "Pupkin",
+  age: 20
 }
-document.form.onsubmit = login;
 
+const {name, age } = object
+console.log()
 
-
+//++++++++++++++++++++++++++++
+///прочитать модуль экспорт и инпорт.______________  
+//_______________________________________________________
+// mvk посмотреть дома ________________________________
+//__________________________________________
