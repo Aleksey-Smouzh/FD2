@@ -96,4 +96,8 @@ canvas.addEventListener("mouseup", function(e){
 let canvas = document.getElementById("canvas"),
 context = canvas.getContext("2d"),
 
-	
+
+let  = document.getElementById("canvas"),
+context = canvas.getContext("2d"),
+
+
